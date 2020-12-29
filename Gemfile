@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+# Reference for bundle error:
+# https://stackoverflow.com/questions/23130295/rails-uninitialized-constant-bundler-nameerror
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -14,6 +16,7 @@ gem "jekyll", "~> 4.2.0"
 # 2. go to _config.tml to change the theme to new name
 # 3. run "bundle exec jekyll serve"
 gem "minima", "~> 2.5"
+gem 'jekyll-swiss', '~> 1.0'
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
