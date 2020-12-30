@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# to start in local dev mode: bundle exec jekyll serve --config _config_dev.yml
+# to start in local dev mode: bundle exec jekyll serve --drafts --config _config_dev.yml
 title: The Devs' Diaries
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
