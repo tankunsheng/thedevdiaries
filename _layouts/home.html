@@ -55,13 +55,19 @@
         </div>
       </header>
 
-      <div class="container mx-auto px-2 py-4 table">
+      <div class="container mx-auto px-2 table">
+        <h1 style="text-align: center;"
+            class="header-title sm-width-full py-3 mt-3" 
+          >My Projects</h1>
         {% for project in site.projects %} 
           {% include project_block.html %} 
         {% endfor %}
       </div>
       <br/>
-      <div class="container mx-auto px-2 py-4">
+      <div class="container mx-auto px-4 py-2">
+        <h1 
+            class="header-title sm-width-full" 
+          >Posts</h1>
         {% for post in site.posts %} {% include post_block.html %} {% endfor %}
       </div>
     </div>

@@ -4,9 +4,9 @@
  
   <a class="no-underline h5 bold text-accent" title="{{ project.url | prepend: site.baseurl }}" href="{{ project.url | prepend: site.baseurl }}">{{ project.date | date: "%b %-d, %Y" }}</a>
   <img style="max-width: 100%;" src="{{project.display_pic}}"/>
-  <h2 class="h2 lh-condensed col-9 mt-0">
+  <h3 class="h3 lh-condensed col-9 mt-0">
     <a class="link-primary" title="{{ project.url | prepend: site.baseurl }}" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-  </h2>
+  </h3>
 
   <p>{{ project.content | strip_html | truncatewords:20 }}</p>
 </div>

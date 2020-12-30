@@ -7,6 +7,7 @@ author: "Tan Kun Sheng"
 display_pic: "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/ftt/ftt.png"
 short_desc: "The most downloaded FTT prep app on Google Play Store!"
 link : "https://play.google.com/store/apps/details?id=com.interactive.ftt"
+techstack: "Native Android SDK for client app"
 
 # so that links wont break
 # permalink: "/projects/:title.html"

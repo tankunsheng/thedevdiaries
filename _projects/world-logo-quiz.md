@@ -7,6 +7,7 @@ author: "Tan Kun Sheng"
 display_pic : "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/world_logo_quiz/world_logo_quiz.png"
 short_desc: "Just how many logos around the world can you recognize? Unlock new stages as you play. The stages get progressively harder, so let's see how you fare on the all-time leaderboards!"
 link : "https://play.google.com/store/apps/details?id=sg.ace.ks.globallogoquiz"
+techstack: "Native Android SDK for client app, Firebase for highscores"
 ---
 
 ## Background
