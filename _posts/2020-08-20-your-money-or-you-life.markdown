@@ -2,7 +2,7 @@
 # layout: post
 title:  "Your Money or Your Life"
 date:   2020-08-20 16:00:22 +0800
-categories: jekyll update
+categories: jekyll update sadasd sss
 author: "Tan Kun Sheng"
 
 # so that links wont break

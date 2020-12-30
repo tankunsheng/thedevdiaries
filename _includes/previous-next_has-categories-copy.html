@@ -2,14 +2,21 @@
 {% if page.categories %}
 
   {% assign category = page.categories[0] %}
-  {% assign posts = site.categories[category] %}
+  <!-- <p>{{category}}</p> -->
+  {% assign posts = site.posts %}
+  <p>{{posts}}</p>
+ 
+
   {% for post in posts %}
+  <p>{{post.url}}</p>
+  <p>{{page.url}}</p>
     {% if post.url == page.url %}
       {% assign post_index0 = forloop.index0 %}
       {% assign post_index1 = forloop.index %}
     {% endif %}
   {% endfor %}
   {% for post in posts %}
+  <p>{{ post_index0}}</p>
     {% if post_index0 == forloop.index %}
       {% assign next_post = post %}
     {% endif %}

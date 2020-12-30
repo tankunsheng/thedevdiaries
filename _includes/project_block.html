@@ -1,0 +1,12 @@
+<!-- Renders project date, title, and snippet of text. -->
+
+<div class="prose col-5 sm-width-full left border-top-thin mt-lg-0 ml-lg-4 py-2">
+ 
+  <a class="no-underline h5 bold text-accent" title="{{ project.url | prepend: site.baseurl }}" href="{{ project.url | prepend: site.baseurl }}">{{ project.date | date: "%b %-d, %Y" }}</a>
+  <img style="max-width: 100%;" src="{{project.display_pic}}"/>
+  <h2 class="h2 lh-condensed col-9 mt-0">
+    <a class="link-primary" title="{{ project.url | prepend: site.baseurl }}" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+  </h2>
+
+  <p>{{ project.content | strip_html | truncatewords:20 }}</p>
+</div>

@@ -67,6 +67,12 @@
 @media (max-width: $breakpoint-lg) {
   .sm-width-full { width: 100% !important; }
 }
+@media (max-width: $breakpoint-lg) {
+  .sm-width-half { width: 50% !important; }
+}
+@media (max-width: $breakpoint-lg) {
+  .sm-width-third { width: 33% !important; }
+}
 
 .block        { display: block !important; }
 .inline-block { display: inline-block !important; }
