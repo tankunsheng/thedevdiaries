@@ -1,7 +1,7 @@
 ---
 title:  "The Team Leader"
 date:   2020-07-28 16:00:22 +0800
-categories: tech work
+categories: Tech Work
 author: "Tan Kun Sheng"
 
 # so that links wont break
