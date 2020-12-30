@@ -7,7 +7,7 @@ author: "Tan Kun Sheng"
 display_pic: "https://prod-4pic1cy-images.s3-ap-southeast-1.amazonaws.com/4pic1cy_1200_600.png"
 short_desc: "Is your command of mandarin good? Are you well versed in 成语s? Let's find out!"
 link : "https://4pic1cy.com/"
-techstack: "Vue3 for web app, Serverless Framework for managing resources on AWS (api gateway, lambdas, dynamodb)"
+techstack: "Vue3 for web app, Serverless Framework for managing resources on AWS backend (api gateway, lambdas, dynamodb)"
 
 # so that links wont break
 # permalink: "/projects/:title.html"
