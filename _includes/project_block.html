@@ -2,8 +2,15 @@
 
 <div class="prose col-5 sm-width-full left border-top-thin mt-lg-0 ml-lg-4 py-2">
  
-
+  {% if project.display_pic contains ".mp4" %}
+  <video style="max-width: 100%;" controls autoPlay loop>
+    <source src={{project.display_pic}} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  {% else %}
   <img style="max-width: 100%;" src="{{project.display_pic}}"/>
+  {% endif %}
+  
   <h3 class="h3 lh-condensed col-9 mt-0">
     <a class="link-primary" title="{{ project.url | prepend: site.baseurl }}" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
   </h3>

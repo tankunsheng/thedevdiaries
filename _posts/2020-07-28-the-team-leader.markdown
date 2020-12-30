@@ -7,7 +7,7 @@ author: "Tan Kun Sheng"
 # so that links wont break
 permalink: "/:categories/:title.html" 
 ---
-Every team works best by having a mix of people who are detail-oriented and broad-based thinkers. The former is commonly associated with engineering work due to the specificities involved in the production of a piece of software or a system. As for the management, a generalist who has a strong understanding of the business domain, its operating context, as well as having a high-level understanding of the technical details will fare pretty well as their role demands a certain degree of versatility in ideas, to be applied over a range of topics. 
+Every team works best by having a balanced ratio of people who are detail-oriented and broad-based thinkers. The former is commonly associated with engineering work due to the specificities involved in the production of a piece of software or a system. As for the management, a generalist who has a strong understanding of the business domain, its operating context, as well as having a high-level understanding of the technical details will fare pretty well as their role demands a certain degree of versatility in ideas, to be applied over a wider range of topics. 
 
 ## Gap between Management and Engineers
 Unfortunately, there is often a gap between these two roles that is hard to close. The dev team struggles to communicate the details of their work without overloading the management with information and thus, it is a challenge to convey the state of any project and the trajectory it is on. 
@@ -29,7 +29,7 @@ The team lead will need to be able to exercise sound judgment to determine if th
 
 **3. A tinge of charisma goes a long way**
 
-Not to push the stereotype further, but you have to acknowledge that one of the common reasons why most of us chose to be in the software engineering industry due to not wanting to deal with people. Most of the software peeps you meet are probably as charismatic as a rock, myself included. Very occasionally, you will be able to find an engineer who is as eloquent and charismatic as they are technically strong. These people are really valuable to the team as long as they are not psychopaths, I kid. Yeah, but really, all teams can really use a team-mate who is charismatic, capable, and empathetic because these are people that truly brings the team together and lift everyone up.
+Not to push the stereotype further, but you have to acknowledge that one of the common reasons why most of us chose to be in the software engineering industry is due to not wanting to deal with people. Most of the software peeps you have meet are probably as charismatic as a rock, myself included. Very occasionally, you will be able to find an engineer who is as eloquent and charismatic as they are technically strong. These people are really valuable to the team as long as they are not psychopaths, I kid. Yeah, but really, all teams can really use a team-mate who is charismatic, capable, and empathetic because these are people that truly brings the team together and lift everyone up.
 
 **4. Manage expectations of client and management**
 
