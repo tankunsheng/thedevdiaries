@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.0"
+gem "jekyll-paginate"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # find new thems in gems here https://rubygems.org/search?utf8=%E2%9C%93&query=jekyll-theme
 # 1. run "bundle install" in cli

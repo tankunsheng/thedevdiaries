@@ -7,7 +7,6 @@
       <header class="header-background">
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
-            
             {% for my_page in site.pages %} {% if my_page.title %}
             <li class="inline-block">
               <a
@@ -23,10 +22,12 @@
         <div class="container mx-auto px-2 mb-2 clearfix header-text">
           <h1
             class="h0 inline-block col-12 sm-width-full py-4 mt-3 header-title"
-          >  
-          <img class="col-3 sm-width-full left py-2 mb-0 mr-3" src="https://kunshengsite.s3-ap-southeast-1.amazonaws.com/thedevdiaries_logo.png"/>
+          >
+            <img
+              class="col-3 sm-width-full left py-2 mb-0 mr-3"
+              src="https://kunshengsite.s3-ap-southeast-1.amazonaws.com/thedevdiaries_logo.png"
+            />
             {{ site.title }}
-            
           </h1>
           <div class="clearfix mb-4 py-1">
             <div class="col-9 sm-width-full left border-top-thin">
@@ -58,22 +59,53 @@
       </header>
 
       <div class="container mx-auto px-2 table">
-        <h1 style="text-align: center;"
-            class="header-title sm-width-full py-3 mt-3" 
-          >My Projects</h1>
-        {% for project in site.projects %} 
-          {% include project_block.html %} 
-        {% endfor %}
+        <h1
+          style="text-align: center"
+          class="header-title sm-width-full py-3 mt-3"
+        >
+          My Projects
+        </h1>
+        {% for project in site.projects %} {% include project_block.html %} {%
+        endfor %}
       </div>
-      <br/>
-      <div class="container mx-auto px-4 py-2">
-        <h1 
-            class="header-title sm-width-full" 
-          >Posts</h1>
-        {% for post in site.posts %} {% include post_block.html %} {% endfor %}
+      <br />
+
+      <!-- This loops through the paginated posts -->
+    <div class="container mx-auto px-4 py-2">
+      <h1 id="Posts" class="header-title sm-width-full">Posts</h1>
+     
+      {% for post in paginator.posts %}
+      
+        {% include post_block.html %} 
+      {% endfor %}
+      <!-- Pagination links -->
+      <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}#Posts" class="previous">
+          Previous
+        </a>
+        {% else %}
+        <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}#Posts" class="next">Next</a>
+        {% else %}
+        <span class="next">Next</span>
+        {% endif %}
       </div>
+
     </div>
 
+
+    </div>
+
+    
+   
+
+  
     {% include footer.html %}
   </body>
 </html>

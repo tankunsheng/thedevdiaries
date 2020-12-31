@@ -28,7 +28,8 @@ url: ""
   # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+paginate: 2
+paginate_path: "/page:num/"
 # Build settings
 # theme: minima
 theme: jekyll-swiss
@@ -38,6 +39,7 @@ collections:
     output: true
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 defaults:
   - scope:
       path: ""
