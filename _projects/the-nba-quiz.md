@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  The NBA Quiz
-date:   2020-05-27 16:00:22 +0800
+date:   2020-08-29 16:00:22 +0800
 categories: myprojects
 author: "Tan Kun Sheng"
 display_pic : "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/nba_logo_quiz/nba.png"

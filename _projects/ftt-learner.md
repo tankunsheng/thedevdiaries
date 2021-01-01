@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "FTT Learner"
-date: 2020-05-28 16:00:22 +0800
+date: 2020-05-27 16:00:22 +0800
 categories: ["test"]
 author: "Tan Kun Sheng"
 display_pic: "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/ftt/ftt.png"

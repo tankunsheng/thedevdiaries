@@ -7,7 +7,19 @@ author: "Tan Kun Sheng"
 # so that links wont break
 permalink: "/:categories/:title.html" 
 ---
-Every team works best by having a balanced ratio of people who are detail-oriented and broad-based thinkers. The former is commonly associated with engineering work due to the specificities involved in the production of a piece of software or a system. As for the management, a generalist who has a strong understanding of the business domain, its operating context, as well as having a high-level understanding of the technical details will fare pretty well as their role demands a certain degree of versatility in ideas, to be applied over a wider range of topics. 
+
+In order to work together to maximize efficiency, humans work together. 
+
+In order to work together, humans communicate.
+
+This fact has not changed in any bit since the days of hunter-gatherers, and I'd say that given today's hyperconnectivity and the rate of our decision making, communications is more important than ever.
+
+In teams at work, people are allocated to different roles in order to deliver different business needs. The magic of specialization ensures that everyone does what they do best in, and optimizing this tradeoff guarantees that the single unit of a "team" achieves a greater output than the sum of all its parts (people) can deliver. This setup however requires energy or fuel to run.
+
+
+
+
+<!-- Every team works best by having a balanced mixture of people who are detail-oriented and broad-based thinkers. The former is more commonly associated with engineering work due to the specificities involved in the production of a piece of software or a system. As for the management, a generalist who has a strong understanding of the business domain, its operating context, as well as having a high-level understanding of the technical details will fare pretty well as their role demands a certain degree of versatility in ideas, to be applied over a wider range of topics.  -->
 
 ## Gap between Management and Engineers
 Unfortunately, there is often a gap between these two roles that is hard to close. The dev team struggles to communicate the details of their work without overloading the management with information and thus, it is a challenge to convey the state of any project and the trajectory it is on. 
@@ -15,7 +27,7 @@ Unfortunately, there is often a gap between these two roles that is hard to clos
 One of many things usually happens here. The management adopts a hands-free approach and lets the dev team drive the implementation of the project. Of course, a requisite must already be present, which is, that the dev team had already instilled a certain level of confidence in the management. Enough for them to be convinced that the team can run on its own for the most part while hitting key milestones with minimal meetings involved. Most of the time, we do not get this, however. When the dev team fails to communicate the statuses clearly, (which is not easy to do in big projects with multiple teams) what happens is usually the knee-jerked reaction of oversubscribing to meetings, updates, and presentations.
 
 ## The Importance of a Team Lead
-Aside from the many modern software and project development methodologies that vow to improve team dynamics and project success, there is one more factor that is as important, if not more - a leader. By leader, I refer to not someone with a fancy title, it is not authoritative power that I am referring to, but instead, someone on the ground who is well connected to the developers and the engineers. Someone who has vast experience in hands-on work and might perhaps still very much be involved in the development works. Coupled with a dose of good business acumen, and great interpersonal skills, this will be the single most member of the team in bridging the gap between the management, business stakeholders, and the technical team of engineers. Ideally, these are the ideal properties and characteristics of the role of a team leader to me and I think that it is important to be able to:
+Aside from the many modern software and project development methodologies that vow to improve team dynamics and project success, there is one more factor that is as important, if not more - a leader. By leader, I refer not, to someone with a fancy title. It is not authoritative power that I am referring to, but instead, someone on the ground who is well connected to the developers and the engineers. Someone who has vast experience in hands-on work and might perhaps still very much be involved in the development works. Coupled with a dose of good business acumen, and great interpersonal skills, this will be the single most member of the team in bridging the gap between the management, business stakeholders, and the technical team of engineers. Ideally, these are the ideal properties and characteristics of the role of a team leader to me and I think that it is important to be able to:
 
 **1. Understand the team and resources at hand**
 
@@ -39,7 +51,7 @@ Understand the business domain well enough to identify the key business needs an
 
 Understand technology space well enough to know how to translate these business requirements into technical solutions. 
 
-Understand the team and the resources at hand well enough in order to evaluate the feasibility of different solutions and arrive at a project plan which is realistic, practical, and detailed.
+Understand the team and the resources at hand well enough in order to evaluate the feasibility of different solutions and propose a detailed project plan that is realistic, and practical.
 
 Lastly, possess the flair and charisma to advise, convince, and even influence the decision making from the management or clients. There should also be a willingness to speak up for the team, and in the event of unreasonable and impractical directives passed down from the management, have the conviction to push back and raise all concerns for the team.
 
