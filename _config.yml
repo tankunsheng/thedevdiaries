@@ -23,7 +23,7 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Talking points on technology, games, investments and anything really. If it is the stereotypical software geek's topics of interests that you're expecting, you'd be right. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://suspicious-feynman-5958c2.netlify.app"
+url: "https://thedevdiaries.com"
   # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
@@ -39,6 +39,7 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 defaults:
   - scope:
       path: ""
