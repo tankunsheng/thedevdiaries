@@ -8,21 +8,20 @@ author: "Tan Kun Sheng"
 permalink: "/:categories/:title.html" 
 ---
 
-In order to work together to maximize efficiency, humans work together. 
+In order to maximize efficiency, humans specialize.
+
+In order to specialize in their own respective disciplines, humans need to work together. Each, bringing to the table, a different set of skill that complements the other.  
 
 In order to work together, humans communicate.
 
-This fact has not changed in any bit since the days of hunter-gatherers, and I'd say that given today's hyperconnectivity and the rate of our decision making, communications is more important than ever.
+This fact has not changed in any bit since the days of hunter-gatherers, and I'd say that communications is more important that ever, given today's hyperconnectivity, and the rate in which decision making has to be made in the new economy.
 
-In teams at work, people are allocated to different roles in order to deliver different business needs. The magic of specialization ensures that everyone does what they do best in, and optimizing this tradeoff guarantees that the single unit of a "team" achieves a greater output than the sum of all its parts (people) can deliver. This setup however requires energy or fuel to run.
+In teams at work, people are assigned different roles, each focused on delivering a different business need. The value in specialization ensures that everyone does what they do best in, and optimizing this tradeoff guarantees that the single unit of a "team" achieves a greater output than the sum of all its parts (people) can deliver. 
 
-
-
-
-<!-- Every team works best by having a balanced mixture of people who are detail-oriented and broad-based thinkers. The former is more commonly associated with engineering work due to the specificities involved in the production of a piece of software or a system. As for the management, a generalist who has a strong understanding of the business domain, its operating context, as well as having a high-level understanding of the technical details will fare pretty well as their role demands a certain degree of versatility in ideas, to be applied over a wider range of topics.  -->
+But things are not quite as simple as there are overheads when it comes to communicating. I don't know about you, but I sometimes find it hard to even communciate with some of my team mates, much less with other people holding other roles, in other teams. How do you relate to someone whose role and responsibilities you know nary of?
 
 ## Gap between Management and Engineers
-Unfortunately, there is often a gap between these two roles that is hard to close. The dev team struggles to communicate the details of their work without overloading the management with information and thus, it is a challenge to convey the state of any project and the trajectory it is on. 
+In teams that are working in tech, there is often a challenge that presents itself as a communication rift between the engineers and the management. The engineering team struggles to communicate the details of their work without overloading the management with information and thus, it is a challenge to convey the state of any project and the trajectory it is on. 
 
 One of many things usually happens here. The management adopts a hands-free approach and lets the dev team drive the implementation of the project. Of course, a requisite must already be present, which is, that the dev team had already instilled a certain level of confidence in the management. Enough for them to be convinced that the team can run on its own for the most part while hitting key milestones with minimal meetings involved. Most of the time, we do not get this, however. When the dev team fails to communicate the statuses clearly, (which is not easy to do in big projects with multiple teams) what happens is usually the knee-jerked reaction of oversubscribing to meetings, updates, and presentations.
 
