@@ -1,0 +1,14 @@
+<div
+  class="prose col-3 sm-width-full left border-top-thin ml-lg-4 py-2"
+>
+  <a target="_blank" href='{{"/assets/img/" | append: cert.link}}'>
+    <img
+      style="max-width: 100%"
+      src='{{"/assets/img/" | append: cert.link}}'
+    />
+  </a>
+  <h4 class="h4">
+    {{cert.name}}
+  </h4>
+  <b>Validity:</b> {{cert.validity}}
+</div>

@@ -1,14 +1,37 @@
 ---
 layout: page
-title: What's this?
+title: About Me
 permalink: /about/
 ---
-Every software dude/gal out there has got ~~a story~~ **many stories**.
 
-Here I am, sharing mine. Feel free to email <span class="text-accent">thedeveloperdiaries@gmail.com</span> if you have anything interesting to share!
+A software engineer. 
 
-<!-- Contrary to the belief that software people are generally uninteresting and dull, personality wise, I find myself to have encountered a flavour of characters after working in the industry for a few years. -->
+A gamer with a love for RPG games.
 
-<!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/) -->
+A singing enthusiast. 
 
+A "woke" salary-man. 
 
+A simple guy.
+
+<!-- Every software dude/gal out there has got ~~a story~~ **many stories**.
+Here I am, sharing mine. Feel free to email <span class="text-accent">thedeveloperdiaries@gmail.com</span> if you have anything interesting to share! -->
+
+<div class="container mx-auto px-2 table">
+        <h1
+          id="Certs"
+          class="header-title sm-width-full py-3 mt-3"
+        >
+          Certifications
+        </h1>
+        {% for cert in site.certs %} {% include cert_block.html %} {%
+        endfor %}
+      </div>
+
+# Quotes to live by
+
+> "As long as the spirit endures, everthing can be rebuilt"
+
+> "We who cut mere stones must always envision cathedrals"
+
+<!-- <h1>Skills</h1> -->

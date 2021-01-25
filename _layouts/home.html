@@ -7,7 +7,6 @@
       <header class="header-background">
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
-            {% for my_page in site.pages %} {% if my_page.title %}
             <li class="inline-block">
               <a
                 class="align-middle link-primary header-link mr-2"
@@ -22,6 +21,7 @@
                 >Diaries</a
               >
             </li>
+            {% for my_page in site.pages %} {% if my_page.title %} 
             <li class="inline-block">
               <a
                 class="align-middle link-primary header-link mr-2"
@@ -64,7 +64,8 @@
       </header>
 
       <div class="container mx-auto px-2 table">
-        <h1 id="Projects"
+        <h1
+          id="Projects"
           style="text-align: center"
           class="header-title sm-width-full py-3 mt-3"
         >
