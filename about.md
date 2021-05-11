@@ -31,7 +31,12 @@ Here I am, sharing mine. Feel free to email <span class="text-accent">thedevelop
 </div>
 ### GovTech Singapore
 ##### Software Engineer
-Worked on APEX, a whole of government API gateway for data sharing across government agencies
+Working on **Developer’s Portal**, a centralized portal to facilitate discovery of government digital products and services.
+*	Working on **Documentation Portal**, a whole of government documentation service for publishing, searching, and reading software documentation.
+  *	Contributed to refactoring and migration of frontend and backend from vanilla Javascript to Typescript. Vue 2 and Express.
+  *	Developed features such as the documentation publishing flow which allow users to authorize publication of docs from a Git repo of a Git Provider of their choice (GitHub, GitLab).
+
+Worked on **APEX**, a whole of government API gateway for data sharing across government agencies
 * Assumed responsibility over OpenAM, a single sign-on authorization server, and its integration with various client applications. Familiarity in OAuth2 and OIDC specs.
 * Worked on APEX Cloud and Kubernetes redesign on AWS EKS.
   * Created CI pipelines for building docker images with Bamboo to Nexus.
