@@ -6,14 +6,14 @@ categories: CloudFormation, Tech
 
 ## !Ref is not, 'Not Ref'. Ref might not be what you want too
 
-Nobody thinks it is 'Not Ref', but it certainly looks the part to anyone who has ever written any kind of code (most likely everyone in Tech). I have always wondered if the designers of CloudFormation are a bunch of hipsters because the syntax they came up with for CloudFormation certainly reflects a sort of exuberance and flair. From '!' messing with the minds of software developers to the double colons '::' not commonly seen in modern languages, to Ref referencing different values for different resource types and the different ways to express the same functions.
+Nobody thinks it is 'Not Ref', but it certainly looks the part to anyone who has ever written any kind of code (most likely everyone in Tech). I have always thought the crew behind the inception of CloudFormation to be a bunch of hipsters. The syntax certainly look the part, it is... non-conventional. From the '!' messing with the minds of software developers to double colons '::' seldomly used and seen in modern, higher level languages, to **'Ref'** returning different values for depending on which resource types you use it on.
 
 ### What is !
-'!' is just a shortened syntax of its counter part, a different syntax to express the same thing. 
+'!' is just the short-hand syntax for expressing intrinsic functions.
 
-For the example of the Sub intrinsic function, you would write '!Sub', instead of 'Fn::Sub:'. 
-It feels awkward in the use case for the intrinsic function of Ref as you would write '!Ref' instead of 'Ref:' - which is definitely more redundant and confusing than convenient. 
-And why not remove the non-shorthand version entirely rather than having multiple ways to achieve the same outcome. New peep are going to be confused when looking at different examples using different ways to express the same things.
+For example, you could write '!Sub', instead of 'Fn::Sub:' if wish to use the **'Sub'** intrinsic function,. 
+However, this is awkward for the use case of Ref, also an intrinsic function, as you could write '!Ref' instead of 'Ref:- which is definitely more redundant and confusing than convenient. 
+And why not remove the non short-hand syntax entirely, rather than having multiple ways to attain the same outcome. Newcomers are going to be confused when looking at different example templates, possibly written by many people, all using different ways to express the same things.
 
 ### Ref, no gimme what me want
 Depending on your initial experience with using **'Ref'**, you might be lured into a preconceived notion of what it returns. I certainly did, at the start.
