@@ -6,7 +6,7 @@ categories: CloudFormation, Tech
 
 ## !Ref is not, 'Not Ref'. Ref might not be what you want too
 
-Nobody thinks it is 'Not Ref', but it certainly looks the part to anyone who has ever written any kind of code (most likely everyone in Tech). I have always thought the crew behind the inception of CloudFormation to be a bunch of hipsters. The syntax certainly look the part, it is... non-conventional. From the '!' messing with the minds of software developers to double colons '::' seldomly used and seen in modern, higher level languages, to **'Ref'** returning different values for depending on which resource types you use it on.
+Nobody thinks it is 'Not Ref', but it certainly looks the part to anyone who has ever written any kind of code (most likely everyone in Tech). I have always thought the crew behind the inception of CloudFormation to be a bunch of hipsters. The syntax certainly look the part, it is... non-conventional. From the '!' messing with the minds of software developers to double colons '::' seldomly used and seen in modern, higher level languages, to **'Ref'** returning different values depending on which resource type you use it on.
 
 ### What is !
 '!' is just the short-hand syntax for expressing intrinsic functions.
