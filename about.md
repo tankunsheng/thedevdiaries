@@ -4,15 +4,23 @@ title: About Me
 permalink: /about/
 ---
 
-A software engineer.
+I am a full-stack software engineer who is interested in bettering my understanding of the entire life cycle of software development, one day at a time.
 
-A gamer with a love for RPG games.
+My interest areas include
+1. Web application development in both the frontend and backend, such as **React, Vue, NodeJs**. 
+2. AWS Cloud Infra as code automation tools, such as **Serverless Framework, Terraform, CloudFormation, and Cloud Development Kit**.
+3. CICD solutions such as **GitLabCI, GitHub Actions, Bamboo**.
+4. Containerization and container platform orchestration technologies, such as **Docker and Kubernetes**.
 
-A singing enthusiast.
+I am also
 
-A "woke" salary-man.
+_A gamer with a love for RPG games._
 
-A simple guy.
+_A bathroom vocalist._
+
+_A "woke" salary-man._
+
+_A realist._
 <br/><br/><br/>
 
 <!-- Every software dude/gal out there has got ~~a story~~ **many stories**.
@@ -31,9 +39,9 @@ Here I am, sharing mine. Feel free to email <span class="text-accent">thedevelop
 </div>
 ### GovTech Singapore
 ##### Software Engineer
-Working on **Developer’s Portal**, a centralized portal to facilitate discovery of government digital products and services.
-*	Working on **Documentation Portal**, a whole of government documentation service for publishing, searching, and reading software documentation.
-  *	Contributed to refactoring and migration of frontend and backend from vanilla Javascript to Typescript. Vue 2 and Express.
+Working on <a style="color:blue" target="_blank" href="https://www.developer.tech.gov.sg/">**Developer’s Portal**</a>, a centralized portal to facilitate discovery of government digital products and services.
+*	Working on <a style="color:blue" target="_blank" href="https://docs.developer.gov.sg/">**Documentation Portal**</a>, a whole of government documentation service for publishing, searching, and reading software documentation.
+  *	Contributed to refactoring and migration of frontend and backend from vanilla Javascript to Typescript. **Vue** and **ExpressJS**.
   *	Developed features such as the documentation publishing flow which allow users to authorize publication of docs from a Git repo of a Git Provider of their choice (GitHub, GitLab).
 
 Worked on **APEX**, a whole of government API gateway for data sharing across government agencies
@@ -56,8 +64,8 @@ Worked on **APEX**, a whole of government API gateway for data sharing across go
 ##### Systems Analyst
 Worked on ePlanner, an inter-agency Web GIS platform with map layers powered by cross agency datasets to facilitate various planning decisions and more.
 *	Gathered requirements in inter-agency discussions to understand cross domain knowledge and pain points so that a GIS solution can be designed.
-*	Performed data exploration, preparation and construction of spatial SQL queries to unlock value in spatial datasets.
-*	Developed map layers on React web app with LeafletJS, using map services served through Geoserver and Esri mapservers.
+*	Performed data exploration, preparation and construction of spatial SQL queries to unlock value in spatial datasets with **PostGIS**.
+*	Developed map layers on **React** web app with LeafletJS, using map services served through Geoserver and Esri mapservers.
 <br/><br/><br/>
 
 ---
