@@ -29,7 +29,7 @@ url:
   # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
-paginate: 2
+paginate: 3
 paginate_path: "/page:num/"
 # Build settings
 # theme: minima
@@ -38,11 +38,17 @@ theme_color: white
 collections:
   projects:
     output: true
+  certs:
+    output: true
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
 defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
   - scope:
       path: ""
       type: posts

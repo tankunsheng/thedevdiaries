@@ -27,7 +27,7 @@ url: "https://thedevdiaries.com"
   # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-paginate: 2
+paginate: 3
 paginate_path: "/page:num/"
 # Build settings
 # theme: minima

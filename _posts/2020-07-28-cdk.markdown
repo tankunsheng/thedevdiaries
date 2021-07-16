@@ -1,0 +1,168 @@
+---
+title: "CDK for Software Engineers!"
+date: 2021-06-28 16:00:22 +0800
+categories: Tech Work
+author: "Tan Kun Sheng"
+
+# so that links wont break
+permalink: "/:categories/:title.html"
+---
+
+I have recently tried AWS's Cloud Development Kit and I think I have been loving it. A Lot. I have used **Serverless Framework**, **CloudFormation** and **Terraform** for a bit with my least favourite being CloudFormation, [see this post.]({% link _posts/2021-05-30-cloudform-serverless-syntax-fiasco.md %})
+
+It is unfortunate that you cannot escape CloudFormation in Serverless Framework if you are using AWS as the cloud provider, given that you most likely need to define most resources other than APIG and Lambdas in CloudFormation templates (omg, the tears).
+
+They are all much more similar to one another than anyone of them is to CDK. In fact, I think almost all IAC solutions out there are expressed in YAML exclusively before CDK came along. I am not sure about you, but as a software developer who is used to writing code, I will take the option to define my infrastructure in a language syntax that I am comfortable with over YAML, any day. I like many things and YAML sadly, is not one of them.
+
+## 1. CDK is Expressive
+
+If you prefer reading code, then you probably prefer reading CDK's constructs (and no, YAML is not code). CDK supports TypeScript, JavaScript, Python, Java, C#/.Net, and (in developer preview) Go. My experience with it was in Typescript so I can only speak for CDK in Typescript.
+
+However, I doubt that using CDK will be any much more different in the flavour of other languages than in Typescript. Especially in the case of strongly-typed languages like Java and C#/.Net, I would think that the experience of using CDK in these languages will be very much the same as on Typescript, if not identical.
+
+The ability to express all the relationships between all infrastructural components in an object oriented manner was really intuitive to me. I think that it was extremely easy to reason about, and in the process of defining your infrastructure in CDK and the links between the parts, you would have undoubtedly established a much clearer picture of your Cloud's system architecture.
+
+You could have achieved the same with the AWS console and other YAML based IAC tools. AWS console is easy to use but it tends to abstract away the creation of some parts such as permissions and policies. I prefer things to be explicitly defined, especially when it comes to learning. IAC tools written in YAML is just harder to understand, and requires more cognitive load to read (this is entirely in my own opinion and all the more power to you if you are a YAML lover).
+
+Refer to the [sample comparison between CDK v.s Serverless Framework/CloudFormation](#cdk-vs-serverless-frameworkcloudformation-example).
+
+
+## 2. Awesome IDE Support
+
+The IDE supporting for writing CDK Typescript on VSCode was **AMAZING**. Image having intellisense and autocomplete features while you are defining your infrastructural resources. The documentation is literally appears as you code, and coupled with compile time type support, you rarely ever make silly mistakes nor specify wrong values for configuration inputs.
+
+The [CDK docs](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html) are also really well written if you need to find out which packages corresponds with which AWS resources.
+
+![ide support for cdk](/assets/img/cdk-ide-support.png)
+
+Save yourself from having to refer to CloudFormation's documentation constantly (CloudFormation docs aren't even that great tbh). Forget trying to fight against its syntax when it has allied itself with YAML to make your life a living hell. AWS has come up with CDK, and with good reason even though they already have CloudFormation.
+
+### Example Comparison
+
+This example creates
+- A customer managed policy
+- A role with the above policy + 2 other AWS managed policies
+- A NodeJs Lambda function
+- A Api Gateway API resource, methods that fronts the Lambda
+
+I really like how everything flows in CDK Typescript and how every relationship between resources are explicitly defined.
+
+#### CDK
+```javascript
+//Create a Managed Policy with permissions to all actions on a particular
+//dynamo table
+const rwJobsTablePolicy = new ManagedPolicy(
+  this,
+  "bickup-rw-jobs-table-policy",
+  {
+    managedPolicyName: `${config.deploymentEnv}-rw-bickup-jobs-table`,
+    statements: [
+      new PolicyStatement({
+        actions: ["dynamodb:*"],
+        resources: [this.dynamoDbJobsTable.tableArn],
+      }),
+    ],
+  }
+);
+//Create a Role with the above Manage Policy attached,
+//along with 2 AWS Managed Policies
+const rwJobsTableLambdaRole = new Role(
+  this,
+  "bickup-rw-jobs-table-lambda-role",
+  {
+    assumedBy: new ServicePrincipal("lambda.amazonaws.com"),
+    managedPolicies: [
+      rwJobsTablePolicy, // <-- policy from above
+      ManagedPolicy.fromAwsManagedPolicyName(
+        "service-role/AWSLambdaVPCAccessExecutionRole"
+      ),
+      ManagedPolicy.fromAwsManagedPolicyName(
+        "service-role/AWSLambdaBasicExecutionRole"
+      ),
+    ],
+  }
+);
+//Create a Lambda Function and attaching the Role above to it
+const postJobFn = new NodejsFunction(this, "bikcup-postjob-fn", {
+  functionName: `${config.deploymentEnv}-bickup-postjob-fn`,
+  runtime: Runtime.NODEJS_14_X,
+  entry: "./src/jobs.ts",
+  handler: "createJob",
+  role: rwJobsTableLambdaRole, // <-- role from above
+  environment: {
+    JOBS_TABLE: config.jobsTable,
+  },
+});
+//Create API Gateway API with the above lambda function as default handler
+const postJobLambdaApi = new LambdaRestApi(this, "bickup-postjob-api", {
+  restApiName: `${config.deploymentEnv}-bickup-postjob-api`,
+  handler: postJobFn,
+  proxy: false,
+  deployOptions: { stageName: config.deploymentEnv },
+  defaultCorsPreflightOptions: {
+    allowOrigins: ["*"],
+  },
+});
+
+const jobs = postJobLambdaApi.root.addResource("jobs");
+jobs.addMethod("POST");
+```
+#### Serverless Framework/CloudFormation
+```yaml
+# Serverless framework example. 
+# Template is not verified and correctness is not guaranteed
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ap-southeast-1
+
+functions: # Which parts define the lambda and which parts are for the APIGW?
+  bickup-postjob-fn:
+    handler: jobs.createJob
+    role: bickup-rw-jobs-table-lambda-role
+    events:
+      - http:
+          path: jobs 
+          method: post
+          cors:
+            origins: '*'
+
+resources:
+  Resources:
+    bickup-rw-jobs-table-lambda-role:
+      Type: AWS::IAM::Role
+      Properties:
+        RoleName: bickup-rw-jobs-table-lambda-role
+        AssumeRolePolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service:
+                  - lambda.amazonaws.com
+              Action: sts:AssumeRole
+        ManagedPolicyArns:
+          - arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole
+          - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole 
+        Policies:
+          - PolicyName: bickup-rw-jobs-table-policy
+            PolicyDocument:
+              Version: '2012-10-17'
+              Statement:
+                - Effect: Allow
+                  Action:
+                    - ["dynamodb:*"]
+                  Resource:
+                    - Fn::GetAtt: [ "dynamoDbJobsTable", "ARN" ]
+
+
+```
+## TLDR
+Do you like to code?
+```javascript
+if (likesCode)
+  "Try out CDK"
+else
+  "YAML is fine too, I guess..."
+```
