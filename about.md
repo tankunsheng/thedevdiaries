@@ -20,7 +20,7 @@ _A bathroom vocalist._
 
 _A "woke" salary-man._
 
-_A realist._
+_A lifelong student._
 <br/><br/><br/>
 
 <!-- Every software dude/gal out there has got ~~a story~~ **many stories**.
