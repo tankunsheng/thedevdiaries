@@ -3,6 +3,7 @@ layout: project
 title:  The NBA Quiz
 date:   2020-08-29 16:00:22 +0800
 categories: myprojects
+type: mobile
 author: "Tan Kun Sheng"
 display_pic : "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/nba_logo_quiz/nba.png"
 short_desc: "You call yourself a basketball fan? Are you sure you can name any other player outside of Michael Jordan, Kobe, and Lebron? Prove it!"

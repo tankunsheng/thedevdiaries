@@ -3,6 +3,7 @@ layout: project
 title:  World Logo Quiz
 date:   2020-05-28 16:00:22 +0800
 categories: myprojects
+type: mobile
 author: "Tan Kun Sheng"
 display_pic : "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/world_logo_quiz/world_logo_quiz.png"
 short_desc: "Just how many logos around the world can you recognize? Unlock new stages as you play. The stages get progressively harder, so let's see how you fare on the all-time leaderboards!"

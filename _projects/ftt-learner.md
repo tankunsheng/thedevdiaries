@@ -2,7 +2,7 @@
 layout: project
 title: "FTT Learner"
 date: 2020-05-27 16:00:22 +0800
-categories: ["test"]
+type: mobile
 author: "Tan Kun Sheng"
 display_pic: "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/ftt/ftt.png"
 short_desc: "The most downloaded FTT prep app on Google Play Store!"

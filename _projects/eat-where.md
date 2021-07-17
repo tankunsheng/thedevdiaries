@@ -3,6 +3,7 @@ layout: project
 title: "Eat Where"
 date: 2020-06-28 16:00:22 +0800
 categories: projects
+type: mobile
 author: "Tan Kun Sheng"
 display_pic: "https://kunshengsite.s3-ap-southeast-1.amazonaws.com/projects/android/eatware/eatware.png"
 short_desc: "Picture the usual lunch hour scene. I look at you, you look at someone else, and everyone's unwilling to be the one to suggest the next worse lunch venue. The solution? Outsource this."
